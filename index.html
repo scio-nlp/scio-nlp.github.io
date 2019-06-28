@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>scio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var offsetTop = $("#page-header").height();
+            $("body").css("padding-top", offsetTop + "px");
+            $(".main").css("min-height", "calc(100vh - " + offsetTop + "px)");
+
+            $("#nav").scrollspy({ animate: true, offset: -offsetTop });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="page-header" class="page-header">
+        <nav>
+            <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#offer">What we offer</a></li>
+                <li><a href="about">About us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="main">
+        <div>
+            <header>
+                <h1>
+                    scio
+                </h1>
+                <p>
+                    Legal Work - Powered by AI
+                </p>
+            </header>
+        </div>
+    </section>
+
+
+    <div id="offer">
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="Images/Stock/skyscraper.jpg" />
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            Accelerate your Work
+                        </h2>
+                    </header>
+                    <h3>
+                        Overview of the scio Document Preprocessing
+                    </h3>
+                    <p>
+                        Log in, put the document into the system - all locally and receive  your document, worked through by legal Natural Language Processing. You see which parts are usual legal texts and which parts and particular words are suspicous. Thus, you gain focus on important parts and save time.
+                    </p>
+                    <h3>
+                        How it works
+                    </h3>
+                        scio developed a Natural Language Processing tool focused on legal language, which also looks out for relevant entities. 
+                        Natural Language Processing is a sub-discipline of Deep Learning, which aims to mimic the human brain. 
+                        Thereby our solution is particularly trained on legal texts. 
+                        You remain in full control of your data, it is never submitted to third parties.
+                        The scio NLP Tool works through the text and classifies it to affected jurisdictions. 
+                        The treatment of a legal area in your document is compared with other documents. 
+                        Legally relevant words are also marked. 
+                        A sentiment analysis examines the extent to which the meaning of your text differs.
+                </div>
+            </article>
+        </section>
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="Images/Stock/skyscraper.jpg" />
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            Advantages at a Glance
+                        </h2>
+                    </header>
+                    <h3>
+                        Focussed reading
+                    </h3>
+                    <p>
+                        Legal documents can be long. 
+                        Thereby a lot of the text are standard formulations. 
+                        However, a responsible-minded jurist reads through everything subtle. 
+                        With scio, the jurist can set focus on important parts, while only proof-reading the majority.
+                    </p>
+                    <h3>
+                        Find the Needle in the Haystack
+                    </h3>
+                    <p>
+                        Small words can change everything. 
+                        And within numerous pages of text, a small word can be like a needle in the haystack. 
+                        By marking relevant words, your focus is always on the detail.
+                    </p>
+
+                    <h3>
+                        Save Time
+                    </h3>
+                    <p>
+                        scio's philosophy is, that a jurists profession is not about text processing and reading. 
+                        These are only side effects. 
+                        We want to give back the time spent on inefficient work. 
+                        We want to let you focus on the core of your profession. 
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="Images/Stock/skyscraper.jpg" />
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            Concerns?
+                        </h2>
+                    </header>
+                    <h3>
+                        Third parties
+                    </h3>
+                    <p>
+                        We take it for granted that your data will not be passed on to third parties and that this will not change.
+                    </p>
+                    <h3>
+                        Data Security
+                    </h3>
+                    <p>
+                        Something about data security.
+                    </p>
+                    <h3>
+                        Legal Advisory
+                    </h3>
+                    <p>
+                        scio explicitly does not advise legally. 
+                        We expect that an educated lawyer is aware of her or his responsibility and does not regard the support as more than it is. 
+                    </p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+
+    <section id="about" class="main project">
+        <article>
+            <div class="image-wrapper">
+                <img src="Images/Logos_Internal/logo_midnight.png" />
+            </div>
+
+            <div class="content-wrapper">
+                <header>
+                    <h2>
+                        About scio
+                    </h2>
+                </header>
+            <h3>
+                Our philosophy
+            </h3>
+            <p>
+                At scio we believe that a workforce is not about being a machinery, but an intelligent human. 
+                Thus, tasks that can be automated or made more efficiently, should be. 
+                Our aim is to trace the legal profession back to its core. 
+                Thereby all our efforts are aimed at putting the human at the centre of every innovation.
+            </p>
+            <h3>
+                Our story
+            </h3>
+            <p>
+                We are scio. 
+                We are students from TU Munich and LMU who met at the Think.Make.Start program of unternehmerTUM. 
+                During the program we developed prototypes of scio in a framework proven by science. 
+                But most importantly, we found a common desire, to use our modern technologies of AI to get rid of inefficient work.
+            </p>
+            <h3>
+                Known by
+            </h3>
+            <p>
+                <div class="row">
+                        <div class="column">
+                            <img src="Images/Logos_External/logotum_neu.png" alt="TUM" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="Images/Logos_External/logo-unternehmertum.png" alt="unternehmerTUM" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="Images/Logos_External/TMS_Logo_Horizontal_Black_Color.png" alt="Think.Make.Start" style="width:100%">
+                </div>
+            </p>
+            </div>
+            </div>                                  
+        </article>
+    </section>
+      
+
+
+    <section id="team" class="main project">
+        <article>
+            <header>
+                <h2>
+                    The Team
+                </h2>
+            </header>
+
+        </article>
+    </section>
+
+
+    <section id="contact_us" class="main project">
+        <article>
+            <header>
+                <h2>
+                    Contact Us!
+                </h2>
+            </header>
+
+
+            <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                    <div class="help-block with-errors"></div>
+            </div>
+
+
+
+        </article>
+    </section>
+    <footer class="footer">
+        <div>
+            <a href="mailto:till.richter@tum.de">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/scio-nlp/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

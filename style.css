@@ -1,0 +1,282 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    padding-top: 82px;
+    font-size: 14px;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  .page-header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    border-bottom: 2px solid whitesmoke;
+  }
+  
+  .page-header nav {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .page-header ul {
+    list-style: none;
+  }
+  
+  .page-header li {
+    display: inline-block;
+  }
+  
+  .page-header a {
+    padding: 0.5em;
+    display: block;
+    cursor: pointer;
+    color: rgb(158, 158, 158);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .page-header a:hover,
+  .page-header .active a {
+    color: rgb(20,91,115);
+  }
+  
+  .main {
+    min-height: calc(100vh - 82px);
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+  }
+  
+  .main > article {
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .main:nth-child(2n) {
+    background-color: whitesmoke;
+  }
+  
+  .main article {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main header h2 {
+    position: relative;
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .main header h2::after {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 4px;
+    background-color: rgb(20,91,115);
+    left: 0;
+    bottom: -2px;
+  }
+  
+  #home {
+    display: flex;
+    padding: 0;
+  }
+  
+  #home > div {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 60%
+      ),
+      url("Images/Stock/law.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+  #home h2 {
+    font-weight: normal;
+  }
+  
+  #home header {
+    padding: 2em;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    #home div {
+      align-items: none;
+      background-image: radial-gradient(
+          circle at center,
+          rgba(0, 0, 0, 0) 20%,
+          rgba(0, 0, 0, 0.4) 100%
+        ),
+        url("Images/Stock/law.jpg");
+    }
+  
+    #home header {
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: 1.5em;
+      max-width: 40%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    #home {
+      padding: 3vw 10vw;
+    }
+  }
+  
+  .project .image-wrapper {
+    position: relative;
+  }
+  
+  .project .image-wrapper .reference {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.5em;
+    color: white;
+    opacity: 0.3;
+  }
+  
+  .project .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .project article {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .project .image-wrapper {
+      flex: 1;
+    }
+  
+    .project .content-wrapper {
+      padding: 1em;
+      flex: 1;
+    }
+  }
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  th {
+    text-align: left;
+    font-size: 1.2em;
+    padding: 1em 0.5em;
+    vertical-align: top;
+  }
+  
+  td {
+    padding: 0.5em;
+    vertical-align: top;  
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 1em;
+    height: 0;
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: whitesmoke;
+  }
+  
+  .footer a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .footer svg {
+    fill: currentColor;
+    color: rgb(120, 120, 120);
+    width: 3em;
+    height: 3em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    transition: color 0.5s ease;
+  }
+  
+  .footer a:hover svg {
+    color: green;
+  }
+
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 48.25%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ /* Start Contact */
+
+  
+  
+/* End contact  */
+
+  /* Start Contact Form*/
+
+  
+
+  
+/* End contact form */
+
+
+

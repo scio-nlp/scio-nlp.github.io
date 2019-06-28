@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Till Richter</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var offsetTop = $("#page-header").height();
+            $("body").css("padding-top", offsetTop + "px");
+            $(".main").css("min-height", "calc(100vh - " + offsetTop + "px)");
+
+            $("#nav").scrollspy({ animate: true, offset: -offsetTop });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="page-header" class="page-header">
+        <nav>
+            <ul id="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#tms">Think Make Start</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="main">
+        <div>
+            <header>
+                <h1>
+                    Hello, I'm Till Richter
+                </h1>
+                <p>
+                    TUM student: Robitics, Cognition, Intelligence
+                </p>
+                <p>
+                    Broad Background in Technology and Business
+                </p>
+                <p>
+                    Interest in Machine Learning
+                </p>
+            </header>
+        </div>
+    </section>
+
+
+    <div id="projects">
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="images/HackaTUM.jpg" />
+                    <span class="reference">Copyright: Patrick H</span>
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            Winner HackaTUM 2018, AID Challenge
+                        </h2>
+                    </header>
+                    <h3>
+                        What I did
+                    </h3>
+                    <p>
+                        At the hackathon my team and I chose to develop a prototype for autonomous taxis to be called
+                        without the necessity of app-usage. The project was primarily set against the background of the
+                        democratisation of modern technologies. For example, elderly people who are not familiar with
+                        apps should not be excluded from mobility. We implemented a hailing detection into a small
+                        framework for taxi-communication (<a href="https://devpost.com/software/aid-cab">Visit our
+                            project on Devpost</a>)
+                    </p>
+                    <h3>
+                        What I learned
+                    </h3>
+                    <ul>
+                        <li> Teamwork in a diverse team</li>
+                        <li>Communication between experts, focussing and redeveloping our vision</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="images/franka.png" />
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            Medical iDENTity
+                        </h2>
+                    </header>
+                    <h3>
+                        What I did
+                    </h3>
+                    <p>
+                        In my last year of the bachelor‘s I did an internship together with my bachelor‘s thesis at
+                        Medical iDENTity, a spin-off of the IRT in Hannover, lead by Prof. Dr. Haddadin. In my thesis I
+                        worked on the Panda light weight robot by Franka Emika, which the startup aims to implement into
+                        working spaces together with humans. Thus, many aspects about safe human-robot collaboration,
+                        but also the desired work were considered. Furthermore, I conducted business related research
+                        for the startups strategic alignment. This was my first real touch with artificial intelligence,
+                        which definitely shaped my academic career.
+                    </p>
+                    <h3>
+                        What I learned
+                    </h3>
+
+                    <ul>
+                        <li>ROS, Python programming on the LWR Panda by Franka Emika</li>
+                        <li>Business related research in startup environment</li>
+                        <li>Working towards a common vision, safe human-robot collaboration</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="main project">
+            <article>
+                <div class="image-wrapper">
+                    <img src="images/9.jpg" />
+                </div>
+                <div class="content-wrapper">
+                    <header>
+                        <h2>
+                            VWI
+                        </h2>
+                    </header>
+                    <h3>
+                        What I did
+                    </h3>
+                    <p>
+                        During my bachelor‘s I was an active member of the German Association for Industrial Engineers
+                        (<a href="https://www.vwi.org/">VWI e.V.</a>), where I took part in diverse workshops,
+                        excursions and many different events. In my last year I took the responsibility to become a
+                        member of our initiative‘s managing board, where I particularly lead its communication. </p>
+                    <h3>
+                        What I learned
+                    </h3>
+
+                    <ul>
+                        <li>Leadership for the student initiative and for ourselves</li>
+                        <li>Organization for our projects and my responsibilities</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+
+
+    <section id="cv" class="main">
+        <article>
+            <header>
+                <h2>
+                    CV
+                </h2>
+            </header>
+            <table>
+                <tbody>
+                    <tr>
+                        <th colspan="3">Academic Career </th>
+                    </tr>
+                    <tr>
+                        <td>2018 - TODAY</td>
+                        <td>Technical University of Munich</td>
+                        <td>MSc. Robotics, Cognition, Intelligence</td>
+                    </tr>
+                    <tr>
+                        <td>Autumn Semester 2017</td>
+                        <td>Chalmers University of Technology (Gothenburg, Sweden)</td>
+                        <td>Erasmus Exchange</td>
+                    </tr>
+                    <tr>
+                        <td>2015 - 2018</td>
+                        <td>Leibniz Universität Hannover</td>
+                        <td>BSc. Engineering and Business Administration, Specialization: Digitization & Automation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2007-2015</td>
+                        <td>Gymnasium St. Ursula School Hannover</td>
+                        <td>Graduation: Abitur (1.2)</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="3">Career and Social Engagement </th>
+                    </tr>
+                    <tr>
+                        <td>10.2016 - 08.2018</td>
+                        <td>Leibniz Universität Hannover</td>
+                        <td>Tutor in Engineering Mathematics and Engineering Mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>12.2015 - TODAY</td>
+                        <td>VWI Hannover (Student Inititative)</td>
+                        <td>Member of the Managing Board in 2017/18</td>
+                    </tr>
+                    <tr>
+                        <td>12.2017 - 07.2018</td>
+                        <td>Medical iDENTity GmbH</td>
+                        <td>Intern, Bachelor's Thesis</td>
+                    </tr>
+                    <tr>
+                        <td>03.2013 - 10.2016</td>
+                        <td>SHP Ingenieure</td>
+                        <td>Student Assistant</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="3">Knowledge & Skills </th>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td colspan="2">
+                            <ul>
+                                <li>German: Native</li>
+                                <li>Spanish: Basic (A2-B1)</li>
+                                <li>English: Fluently (C1)<ul>
+                                        <li>Erasmus Exchange 2017, Sweden</li>
+                                        <li>Language Course 2011, GB</li>
+                                        <li>TOEFL ibT: 102 points</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IT-Knowledge
+                        </td>
+                        <td colspan="2">
+                            <ul>
+                                <li>Profound: Python, Matlab, MS Office</li>
+                                <li>Basic: C, C++, JAVA</li>
+                                <li>Economic Software: GAMS, Markstrat, ARIS</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <section id="tms" class="main">
+        <article>
+            <header>
+                <h2>
+                    Think Make Start
+                </h2>
+            </header>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FIUDA2q8fmg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <div>
+            <a href="mailto:till-richter@gmx.de">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/till-richter-659334157/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+            <a href="https://www.xing.com/profile/Till_Richter9?sc_o=mxb_p">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.085 15l2.744-4.825-1.846-3.162h3.292l1.83 3.152-2.744 4.835h-3.276zm8.79-1.445l3.514 6.445h-3.252l-3.55-6.445 5.38-9.555h3.289l-5.381 9.555z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
