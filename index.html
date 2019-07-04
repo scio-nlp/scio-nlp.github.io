@@ -6,26 +6,15 @@
 
     <!-- For the Icon in the tab -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/Icons/scio_logo/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/Icons/scio_logo/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/Icons/scio_logo/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/Icons/scio_logo/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/Icons/scio_logo/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/Icons/scio_logo/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/Icons/scio_logo/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/Icons/scio_logo/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/Icons/scio_logo/apple-icon-180x180.png">
-    <link rel="shortcut icon" type="image/png" sizes="192x192"  href="/Icons/scio_logo/android-icon-192x192.png">
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/Icons/scio_logo/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/png" sizes="96x96" href="/Icons/scio_logo/favicon-96x96.png">
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="/Icons/scio_logo/favicon-16x16.png">
-    <link rel="manifest" href="/Icons/scio_logo/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/Icons/scio_logo/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Icons/scio_logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Icons/scio_logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Icons/scio_logo/favicon-16x16.png">
+    <link rel="manifest" href="/Icons/scio_logo/site.webmanifest">
+    <link rel="mask-icon" href="/Icons/scio_logo/safari-pinned-tab.svg" color="#09acc2">
+    <meta name="msapplication-TileColor" content="#09acc2">
     <meta name="theme-color" content="#ffffff">
 
     <!-- End for the Icon in the tab -->
-
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>scio</title>
@@ -34,8 +23,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var offsetTop = $("#page-header").height();
+            $("body").css("padding-top", offsetTop + "px");
+            $(".main").css("min-height", "calc(100vh - " + offsetTop + "px)");
+
+            $("#nav").scrollspy({ animate: true, offset: -offsetTop });
+        });
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <!--Stuff from viewport for contact form-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -51,15 +50,7 @@
     <!--===============================================================================================-->
     <!--End Stuff from viewport for contact form -->
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var offsetTop = $("#page-header").height();
-            $("body").css("padding-top", offsetTop + "px");
-            $(".main").css("min-height", "calc(100vh - " + offsetTop + "px)");
 
-            $("#nav").scrollspy({ animate: true, offset: -offsetTop });
-        });
-    </script>
 </head>
 
 <body>
@@ -252,7 +243,6 @@
     </section>
       
 
-
     <section id="team" class="main project">
 
         <div class="container-fluid">
@@ -310,37 +300,37 @@
 
     <section id="contact_us" class="main project">
         <article>
-            <div>
+            <div class="content-wrapper">
                 <header>
                     <h2>
                         Contact Us!
                     </h2>
                 </header>
+
+
+                <!-- From WWW Schools -->
+                <div>
+                    <form action="mailto:till.richter@tum.de">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                        <email for="email">E-Mail</email>
+                        <input type="text" id="email" name="email" placeholder="E-Mail"
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
             </div>
 
-            <p>
-
-            <!-- From WWW Schools -->
-            <div class="container">
-                <form action="mailto:till.richter@tum.de">
-
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="First Name">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
-
-                    <email for="email">E-Mail</email>
-                    <input type="text" id="email" name="email" placeholder="E-Mail"
-
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                    <input type="submit" value="Submit">
-
-                </form>
-            </div>
-        <!--End from WWW Schools-->
+            <!--End from WWW Schools-->
 
 
 
@@ -394,6 +384,8 @@
 
         </article>
     </section>
+
+
     <footer class="footer">
         <div>
             <a href="mailto:till.richter@tum.de">
@@ -422,16 +414,6 @@
     <script src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
     <script src="js_contact/main.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-23581568-13');
-    </script>
 <!-- End from viewport -->
 
 </body>
