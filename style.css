@@ -1,3 +1,8 @@
+/* Add smooth scrolling when navigating to anchors */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     margin: 0;
